@@ -4,7 +4,7 @@ FROM nginx:alpine
 WORKDIR /srv/app
 
 ARG EARTHLY_GIT_HASH
-ARG REPO
+ARG REPO=bfolkens/nginx-redirector
 
 build:
   RUN apk add --update --no-cache bash
